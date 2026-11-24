@@ -69,12 +69,3 @@ dsh plugin --profile desktop remove dsh-width-handle-toggle
 
 MIT
 
-## English
-
-Adds a settings switch for the DSH conversation width handles: with the switch off nothing is shown; with it on, the transcript and the composer each get their own drag rail on the left, adjustable independently.
-
-```bash
-dsh plugin --profile desktop add dsh-width-handle-toggle
-```
-
-Restart the app once after installing. Open Settings → Chat width and turn on “Chat width handles”.
