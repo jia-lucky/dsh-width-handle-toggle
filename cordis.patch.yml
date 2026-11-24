@@ -1,0 +1,5 @@
+# Bundle patch for dsh-width-handle-toggle.
+# `dsh plugin --profile <name> add dsh-width-handle-toggle` inserts this entry.
+- insert:
+    - id: dsh-width-handle-toggle
+      name: dsh-width-handle-toggle

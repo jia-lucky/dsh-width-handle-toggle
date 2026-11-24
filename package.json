@@ -1,0 +1,65 @@
+{
+  "name": "dsh-width-handle-toggle",
+  "version": "1.0.0",
+  "description": "DSH 对话区宽度手柄：消息区与输入框各自独立调宽，开关在设置里，默认隐藏。",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "jia-lucky",
+    "url": "https://github.com/jia-lucky"
+  },
+  "homepage": "https://github.com/jia-lucky/dsh-width-handle-toggle#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jia-lucky/dsh-width-handle-toggle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jia-lucky/dsh-width-handle-toggle/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "conversation",
+    "width",
+    "resize",
+    "settings"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node scripts/check.mjs",
+    "prepublishOnly": "node scripts/check.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
