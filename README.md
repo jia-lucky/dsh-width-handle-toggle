@@ -17,9 +17,6 @@
 ```bash
 # 从 GitHub 安装（当前方式）
 dsh plugin --profile desktop add github:jia-lucky/dsh-width-handle-toggle#v1.0.0
-
-# npm 发布后也可以：
-dsh plugin --profile desktop add dsh-width-handle-toggle
 ```
 
 `desktop` 换成你实际使用的 profile 名（`dsh web` 形态常用 `web`）。安装后**重启一次应用**：开关的客户端模块与启动脚本是在宿主启动时挂载的。
